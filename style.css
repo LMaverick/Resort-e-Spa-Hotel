@@ -53,6 +53,7 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background-color:rgba(96, 61, 41, 0.5); /* Cor e opacidade do overlay */
 }
 
@@ -87,3 +88,142 @@ html, body{
 }
 
 /* =============================  =======================================*/
+#sec-mod1{
+    display: grid;
+    grid-template-areas: 'titulo  img '
+                         'txt img';
+    
+    background-color: var(--cor2);
+    padding: 50px 100px;
+  
+    height: 100%;
+    width: 100vw;
+
+    position: relative; 
+    z-index: 2;
+
+  }
+
+  #mod1-titulo,
+  #mod1-txt,
+  #mod1-img {
+      position: relative; 
+  }  
+  
+  #mod1-titulo{
+    grid-area: titulo;
+  
+    margin: 0 auto;
+    text-align: justify;
+    padding: 80px 80px 10px 10px;
+
+    font-family: var(--fonte1);
+    color: var(--cor3);
+    font-size: 50px;
+    font-weight: 400;
+
+
+  }
+
+  #mod1-txt{
+    grid-area: txt;
+  
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0px 80px 100px 10px;
+
+    font-family: var(--fonte2);
+    color: var(--cor3);
+    font-size: 24px;
+    font-weight: 300;
+
+
+  }
+
+  #mod1-img{
+    grid-area: img;
+    max-width: 600px;
+    max-height: 90vh;
+    margin: 0 auto;
+    padding: 0px 150px 0px 0px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  }
+
+
+/* =============================  =======================================*/
+
+#sec-mod2{
+    display: grid;
+    grid-template-areas: 'titulo  titulo titulo '
+                         'room1 room2 room3'
+                         'room1 room2 room3';
+    
+    background-color: var(--cor1);
+    padding: 50px 100px 50px 100px;
+  
+    height: 100%;
+    width: 100vw;
+
+    position: relative; 
+    z-index: 2;
+
+  }
+
+  .mod2-carrossel{
+    max-width: 100%;
+    max-height: 300px;
+    padding: 10px;
+
+
+  }
+
+  #mod2-room1{
+    grid-area: room1;
+  }
+
+  #mod2-room1{
+    grid-area: room2;
+  }
+
+  #mod2-room1{
+    grid-area: room3;
+  }
+
+
+  #mod2-img{
+    width: 300px; 
+    height: 300px; 
+    margin: 0 auto;
+    padding: 0px 150px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    margin: 0 auto;
+    padding: 0 150px 0 0;
+
+}
+#mod2-img  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  .mod2-div{
+    max-width: 100%;
+    max-height: 100%;
+
+    border: 2px solid var(--cor3);
+  }
+
+
+
+
+/* =============================  =======================================*/
+
