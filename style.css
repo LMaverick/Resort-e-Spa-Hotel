@@ -87,6 +87,12 @@ html, body{
     font-weight: 500px;
 }
 
+#top-btn:hover {
+    background-color: var(--cor3);
+    transition: background-color 0.7s ease;
+    color: var(--cor1);
+}
+
 /* =============================  =======================================*/
 #sec-mod1{
     display: grid;
@@ -145,13 +151,16 @@ html, body{
     max-width: 600px;
     max-height: 90vh;
     margin: 0 auto;
-    padding: 0px 150px 0px 0px;
+    padding: 0px 150px 0px 50px;
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+
     
   }
+ 
 
 
 /* =============================  =======================================*/
@@ -163,7 +172,8 @@ html, body{
                          'room1 room2 room3';
     
     background-color: var(--cor1);
-    padding: 50px 100px 50px 100px;
+    padding: 10px;
+    padding-bottom: 50px;
   
     height: 100%;
     width: 100vw;
@@ -171,56 +181,111 @@ html, body{
     position: relative; 
     z-index: 2;
 
+    place-items: center;
+
   }
 
   .mod2-carrossel{
-    max-width: 100%;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 250px;
     padding: 10px;
+    margin-top: 0px;
 
 
   }
+
+
 
   #mod2-room1{
     grid-area: room1;
+    padding-left: 100px;
+    padding-bottom: 100px;
   }
 
-  #mod2-room1{
+  #mod2-room2{
     grid-area: room2;
+    padding-bottom: 100px;
   }
 
-  #mod2-room1{
+  #mod2-room3{
     grid-area: room3;
+    padding-right: 100px;
+    padding-bottom: 100px;
   }
 
 
   #mod2-img{
-    width: 300px; 
-    height: 300px; 
+    width: 350px; 
+    height: 250px; 
     margin: 0 auto;
-    padding: 0px 150px 0px 0px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    
+    overflow: hidden; 
 
-    margin: 0 auto;
-    padding: 0 150px 0 0;
 
 }
 #mod2-img  img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+#mod2-img:hover img {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+#mod2-img:hover {
+    overflow: hidden; 
 }
 
+
   .mod2-div{
+    margin-top: 10px;
+
+    padding: 5px;
+
     max-width: 100%;
     max-height: 100%;
-
     border: 2px solid var(--cor3);
+    text-align: center;
+    color: var(--cor3);
+   
   }
+
+  .mod2-div:hover {
+    background-color: var(--cor3);
+    transition: background-color 0.7s ease;
+    color: var(--cor1);
+}
+
+ #mod2-titulo{
+    grid-area: titulo;
+    text-align: center; 
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    font-family: var(--fonte1);
+    color: var(--cor3);
+    font-size: 80px;
+    font-weight: 500;
+}
+
+#mod2-txt1 {
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+#mod2-txt2 {
+    font-weight: bold; 
+    margin: 10px 0;
+}
+#mod2-txt3 {
+    margin-top: 5px; 
+    padding-bottom: 15px;
+}
 
 
 
